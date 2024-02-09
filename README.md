@@ -1,4 +1,7 @@
 ## Image Caption Generation using RNNs and LTSMs
+![Captioning Example 1](captionresults1.png)
+![Captioning Example 2](captionresults2.png)
+![Captioning Example 3](captionresults3.png)
 ### Abstract
 In this project, we utilized Recurrent Neural Networks(RNNs) and its ability to capture temporal dynamics to generate descriptive captions for input images in an accurate fashion. In totality, we constructed 3 models: a tuned baseline model using the LSTM module in the decoder, a model using a "vanilla" RNN module, and a model constructed using a different architecture where the input image is passed at each timestep. Caption generation was stochastically or deterministically conducted at test time to generate BLEU-1 and BLEU-4 scores by comparing them to the ground-truth captions. The tuned baseline LSTM model achieved a final test loss of 1.720, a 67.531 BLEU-1 score, and a 8.400 BLEU-4 score. Likewise, the vanilla RNN model achieved a final test loss of 1.921, 64.695 BLEU-1 score, and a 7.410 BLEU-4 score. The Architecture 2 model resulted in a final test loss of 1.722, 68.663 BLEU-1 score, and a 9.264 BLEU-4 score.
 
