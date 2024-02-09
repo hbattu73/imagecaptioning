@@ -15,6 +15,9 @@ For the vanilla RNN model, the decoder utilizes a traditional RNN cell. These ce
 
 After testing with different hidden and embedding sizes, we decided that the number of hidden units for the Architecture 2 model should be 768 with embedding size of 600 dimensions. Our hyperparameter search was a strenous one. We noticed that a higher learning rate leads to faster training time but weaker convergence. After testing from learning rates within the range [1e-4, 5e-4], we decided that a learning rate of 1e-4 leads to good convergence while not overly slowing down training time. Convergence was noticed within 8-10 epochs, so we decided to use 10 epochs for every model as the upper limit.
 
+### Training and Validation Loss
+![Training and Validation Loss](experimentstats.png)
+
 ## How to Run
 
 ### Baseline(Tuned)
